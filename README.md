@@ -1,4 +1,3 @@
-```markdown
 # Olá, eu sou [Seu Nome]! 👋
 
 Bem-vindo ao meu perfil no GitHub! Sou um apaixonado desenvolvedor .NET que adora transformar ideias em soluções robustas, escaláveis e seguras. Aqui você pode conferir um pouco das minhas experiências, habilidades e projetos.
