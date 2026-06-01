@@ -32,7 +32,6 @@ Implementar a evolução do módulo de Remarketing para suportar:
 - prioridade/restrição por grupo exclusivo
 - barra de progresso e mensagens dinâmicas
 - resumo financeiro dinâmico
-- geração de relatório mediante permissão
 
 ---
 
@@ -66,7 +65,6 @@ As referências fornecidas devem contemplar campos equivalentes a:
 - DN
 - CNPJ
 - usuários com acesso à funcionalidade de ofertas
-- usuários com acesso à extração de relatórios
 
 Regras obrigatórias:
 - usar esta carga para determinar identidade/associação do DN
@@ -172,10 +170,7 @@ Deve suportar filtro por categoria do veículo:
 
 O filtro deve seguir o mesmo comportamento dos demais filtros existentes.
 
-### 4.2. Geração de relatório
-Se o usuário logado tiver permissão de extração de relatórios, o backend deve retornar/permitir a funcionalidade de geração de relatório das compras do DN logado.
-
-### 4.3. Dados dos cards
+### 4.2. Dados dos cards
 Cada card deve possuir backend compatível para prover, no mínimo, os dados abaixo de acordo com as referências existentes:
 - categoria/flag visual do veículo
 - link de cautelar
@@ -190,7 +185,7 @@ Cada card deve possuir backend compatível para prover, no mínimo, os dados aba
 - tipos de faturamento permitidos
 - estado/status de compra
 
-### 4.4. Regras de exibição do desconto à vista no card
+### 4.3. Regras de exibição do desconto à vista no card
 - exibir a informação “Pague à vista e economize X%” apenas quando houver desconto à vista aplicável para a oferta
 - se o DN/grupo logado não tiver opção de faturamento à vista disponível, não exibir esse informativo
 - o valor do desconto à vista deve vir do upload de ofertas
@@ -382,7 +377,6 @@ Devem validar consistência entre DN, grupo, categorias e permissões conforme a
 ## 15. Permissões e segurança
 Regras obrigatórias:
 - somente usuários permitidos podem acessar a funcionalidade de ofertas
-- somente usuários com permissão apropriada podem extrair relatórios
 - uploads administrativos devem respeitar o controle de acesso do projeto
 - as validações de visibilidade devem sempre considerar DN, grupo, categoria do grupo e grupo exclusivo
 
@@ -434,7 +428,6 @@ A implementação deve cobrir, no mínimo, cenários equivalentes a:
 - travamento no teto monetário
 - atualização correta do resumo financeiro
 - cálculo de projeção de desconto adicional
-- permissão de geração de relatório
 
 Use o padrão de testes existente no projeto.
 
